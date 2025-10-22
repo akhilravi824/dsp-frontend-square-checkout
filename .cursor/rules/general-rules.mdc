@@ -1,0 +1,14 @@
+---
+description: 
+globs: *.svlete
+alwaysApply: false
+---
+
+# System configuration for css
+
+- [_buttons.scss](mdc:src/styles/system/_buttons.scss)
+- [_colors.scss](mdc:src/styles/system/_colors.scss)
+- [_layouts.scss](mdc:src/styles/system/_layouts.scss)
+- [_reset.scss](mdc:src/styles/system/_reset.scss)
+- [_spaces.scss](mdc:src/styles/system/_spaces.scss)
+- [_types.scss](mdc:src/styles/system/_types.scss)

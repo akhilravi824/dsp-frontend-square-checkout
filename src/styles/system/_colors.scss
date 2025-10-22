@@ -1,0 +1,145 @@
+:root {
+  // Whites
+  --color-white-100: #ffffff;
+  --color-white-60: rgba(255, 255, 255, 0.6);
+  --color-white-30: rgba(255, 255, 255, 0.3);
+  --color-white-20: rgba(255, 255, 255, 0.2);
+  --color-white-10: rgba(255, 255, 255, 0.1);
+
+  // Darks
+  --color-dark-100: #1f1f2f;
+  // --color-dark-60: rgba(36, 36, 66, 0.6); //#7c7c8e;
+  --color-dark-60: rgba(5, 5, 3, 0.6); // #050521
+  --color-dark-20: rgba(36, 36, 66, 0.2);
+  --color-dark-10: rgba(36, 36, 66, 0.1);
+  --color-dark-5: rgba(0, 0, 77, 0.05);
+
+  // Primary
+  --color-primary-blue: #075ee7;
+
+  // Spot Colors
+  --color-spot-1: #450242;
+  --color-spot-2: #091257;
+  --color-spot-3: #004045;
+
+  --color-theme-1-disabled: #bbd1f4;
+  --color-theme-2-disabled: #d6d1f5;
+  --color-theme-3-disabled: #b9e9da;
+  --color-theme-4-disabled: #f2de9f;
+  --color-theme-5-disabled: #ecc1a1;
+
+  // Semantic Colors
+  --color-approved: #038749;
+  --color-approved-dimmed: rgba(3, 135, 73, 0.15);
+  --color-warning: #b11701;
+  --color-warning-dimmed: rgba(177, 23, 1, 0.05);
+
+  // Theme 1 (Level 1)
+  --color-theme-1-base: #d5e8fd;
+  --color-theme-1-gradient: #6596ff;
+  --color-theme-1-gradient-bg:
+    radial-gradient(
+      182.11% 160.68% at 6.25% 130.49%,
+      var(--color-theme-1-gradient) 0%,
+      var(--color-theme-1-base) 80.42%
+    ),
+    radial-gradient(
+      192.45% 151.87% at 112.64% -12.28%,
+      var(--color-theme-1-gradient) 0%,
+      var(--color-theme-1-base) 61.12%
+    ),
+    var(--color-theme-1-base);
+
+  --color-theme-1-gradient: rgba(213, 232, 253, 0);
+  --theme-1-theme-1-bg: rgba(213, 232, 253, 1);
+  --color-theme-1-gradient-loader: radial-gradient(103.67% 82.5% at 29.75% 34.93%, #d5e8fd00 0%, #d5e8fdff 100%);
+
+  // Theme 2 (Level 2)
+  --color-theme-2-base: #f1eaff;
+  --color-theme-2-gradient: #8383f7;
+  --color-theme-2-gradient-bg:
+    radial-gradient(
+      182.11% 160.68% at 6.25% 130.49%,
+      var(--color-theme-2-gradient) 0%,
+      var(--color-theme-2-base) 80.42%
+    ),
+    radial-gradient(
+      192.45% 151.87% at 112.64% -12.28%,
+      var(--color-theme-2-gradient) 0%,
+      var(--color-theme-2-base) 61.12%
+    ),
+    var(--color-theme-2-base);
+  --color-theme-2-gradient-loader: radial-gradient(103.67% 82.5% at 29.75% 34.93%, #f1eaff00 0%, #f1eaffff 100%);
+
+  // Theme 3 (Level 3)
+  --color-theme-3-base: #e4fae8;
+  --color-theme-3-gradient: #5dbf6f;
+  --color-theme-3-gradient-bg:
+    radial-gradient(
+      182.11% 160.68% at 6.25% 130.49%,
+      var(--color-theme-3-gradient-tone, rgba(255, 255, 126, 0.65)) 0%,
+      var(--color-theme-3-gradient-base, rgba(255, 255, 186, 0)) 80.42%
+    ),
+    radial-gradient(
+      192.45% 151.87% at 112.64% -12.28%,
+      var(--color-theme-3-gradient-tone, rgba(255, 255, 126, 0.3)) 0%,
+      var(--color-theme-3-gradient-base, rgba(255, 255, 186, 0)) 61.12%
+    ),
+    var(--color-theme-3-bg, #a9f2ff);
+  --color-theme-3-gradient-loader: radial-gradient(103.67% 82.5% at 29.75% 34.93%, #e4fae800 0%, #e4fae8ff 100%);
+
+  // Theme 4 (Level 4)
+  --color-theme-4-base: #ffe0f3;
+  --color-theme-4-gradient: #ff78c4;
+  --color-theme-4-gradient-bg:
+    radial-gradient(
+      182.11% 160.68% at 6.25% 130.49%,
+      var(--color-theme-4-gradient-tone, rgba(255, 163, 164, 0.65)) 0%,
+      var(--color-theme-4-gradient-base, rgba(255, 215, 216, 0)) 80.42%
+    ),
+    radial-gradient(
+      192.45% 151.87% at 112.64% -12.28%,
+      var(--color-theme-4-gradient-tone, rgba(255, 163, 164, 0.3)) 0%,
+      var(--color-theme-4-gradient-base, rgba(255, 215, 216, 0)) 61.12%
+    ),
+    var(--color-theme-4-bg, #fffd97);
+  --color-theme-4-gradient-loader: radial-gradient(103.67% 82.5% at 29.75% 34.93%, #ffe0f300 0%, #ffe0f3ff 100%);
+
+  // Theme 5 (Level 5)
+  --color-theme-5-base: #fff3bf;
+  --color-theme-5-gradient: #ffdc4f;
+  --color-theme-5-gradient-bg:
+    radial-gradient(
+      182.11% 160.68% at 6.25% 130.49%,
+      var(--color-theme-5-gradient-tone, rgba(208, 90, 83, 0.65)) 0%,
+      var(--color-theme-5-gradient-base, rgba(255, 225, 236, 0)) 80.42%
+    ),
+    radial-gradient(
+      192.45% 151.87% at 112.64% -12.28%,
+      var(--color-theme-5-gradient-tone, rgba(208, 90, 83, 0.3)) 0%,
+      var(--color-theme-5-gradient-base, rgba(255, 225, 236, 0)) 61.12%
+    ),
+    var(--color-theme-5-bg, #ffdca4);
+  --color-theme-5-gradient-loader: radial-gradient(103.67% 82.5% at 29.75% 34.93%, #fff3bf00 0%, #fff3bfff 100%);
+}
+
+.text-color\:dark-100 {
+  color: var(--color-dark-100);
+}
+
+.text-color\:dark-60 {
+  color: var(--color-dark-60);
+}
+
+.text-color\:dark-20 {
+  color: var(--color-dark-20);
+}
+
+.text-color\:primary-blue {
+  color: var(--color-primary-blue);
+}
+
+.text-color\:warning {
+  color: var(--color-warning);
+  --icon-color: var(--color-warning);
+}

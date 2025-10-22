@@ -1,0 +1,219 @@
+:root {
+  // Font Sizes (Mobile - Default)
+  --font-size-5xl: 11.25rem; // 180px (Same as desktop)
+  --font-size-4xl: 2.25rem; // 36px (Same as desktop)
+  --font-size-3xl: 2.25rem; // 36px
+  --font-size-2xl: 1.75rem; // 28px
+  --font-size-xl: 1.5rem; // 24px
+  --font-size-lg: 1.25rem; // 20px
+  --font-size-md: 1rem; // 16px
+  --font-size-sm: 0.875rem; // 14px
+  --font-size-xs: 0.75rem; // 12px
+  --font-size-2xs: 0.625rem; // 10px
+
+  // Font Weights
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-strong: 600;
+  --font-weight-bold: 700;
+
+  // Letter Spacing
+  --letter-spacing-default: 0;
+  --letter-spacing-tight: -0.04em;
+
+  // Default Color Assumption
+  --color-text-default: var(--color-dark-100);
+  --color-text-grey: var(--color-dark-60); // Assumption for #grey
+
+  // Font Sizes (Desktop Overrides - min-width 769px)
+  @media (min-width: 768px) {
+    --font-size-5xl: 11.25rem; // 180px
+    --font-size-4xl: 3rem; // 48px
+    --font-size-3xl: 2.5rem; // 40px
+    --font-size-2xl: 2rem; // 32px
+    --font-size-xl: 1.75rem; // 28px
+    --font-size-lg: 1.5rem; // 24px
+    --font-size-md: 1.125rem; // 18px
+    --font-size-sm: 1rem; // 16px
+    --font-size-xs: 0.875rem; // 14px
+    --font-size-2xs: 0.75rem; // 12px
+  }
+
+  @media (min-width: 1024px) {
+    --font-size-4xl: 5rem; // 80px
+  }
+}
+
+// Typography Classes
+.type\:h1-huge {
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: 0.85;
+}
+
+.type\:h1-display {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: 1;
+}
+
+.type\:h1-large {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:h1-large-bold {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:h1 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:h2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:h2-trim {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:h3 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:h3-medium {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:h4 {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:body-large {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:body-large-medium {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:body {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:label-large {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:label-small {
+  font-size: var(--font-size-2xs);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:label-medium {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:label-bold {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:subs {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:lesson-title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:lesson-title-bold {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: 1.2;
+}
+
+.type\:header-link {
+  @extend .type\:label;
+  color: var(--link-color, var(--color-dark-60));
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: var(--link-hover-color, var(--color-dark-100));
+  }
+}
+
+.rich-text {
+  span {
+    @extend .type\:label-large;
+  }
+
+  strong {
+    font-weight: var(--font-weight-strong);
+    color: var(--strong-color, var(--color-dark-100));
+  }
+
+  a {
+    color: currentColor;
+  }
+}

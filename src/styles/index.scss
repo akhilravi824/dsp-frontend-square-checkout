@@ -1,0 +1,28 @@
+@use './system/reset';
+@use './system/colors';
+@forward './system/types';
+@use './system/spaces';
+@use './system/layouts';
+@use './system/inputs';
+@use './system/typography';
+@use './system/animations';
+@use './system/ease';
+
+:root {
+  --color-foreground: var(--color-dark-100);
+  --color-background: var(--color-white-100);
+
+  --font-primary: 'Albert Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary), sans-serif;
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,53 @@
+.link\:reset {
+  text-decoration: none;
+  color: currentColor;
+
+  &:visited {
+    color: currentColor;
+  }
+}
+
+.link\:underline-hover {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link\:underlined {
+  --_hover-color: var(--link-hover-color, var(--color-primary-blue));
+  background: transparent;
+  padding: 0;
+  border: none;
+  color: var(--link-color, currentColor);
+  text-decoration: underline;
+  transition: color 0.3s;
+  cursor: pointer;
+
+  &:visited {
+    color: var(--link-color, currentColor);
+  }
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    color: var(--_hover-color);
+  }
+
+  &:disabled {
+    color: var(--color-dark-60);
+    cursor: not-allowed;
+  }
+
+  &.cancel-link {
+    color: var(--link-color, var(--color-warning));
+    //--_hover-color: var(--link-hover-color, rgba(179, 0, 0, 0.91 0));
+  }
+}
+
+strong {
+  font-weight: var(--font-weight-bold);
+  color: var(--strong-color, var(--color-dark-100));
+}
+
+.text\:center {
+  text-align: center;
+}

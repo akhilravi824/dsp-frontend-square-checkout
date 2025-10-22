@@ -1,0 +1,29 @@
+@keyframes float-up-down {
+  0% {
+    transform: translateY(-2vw);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translateY(2vw);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(-2vw);
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes float-down-up {
+  0% {
+    transform: translateY(2vw);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translateY(-2vw);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(2vw);
+    animation-timing-function: ease-in-out;
+  }
+}
